@@ -1,0 +1,72 @@
+<script>
+   let myInterval
+</script>
+
+<h1 align=center>Auto-Movement by Natasha</h1>
+<br><br><br>Make all directions (in a table?) replace Fred with an image.<br>
+
+<div id="myDiv01" style="position:absolute; left:200; top:10; " ><img src="https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/cat-meme-97.jpg?fit=500%2C366&ssl=1" height="100" width="120"></div>
+
+<input type=button value="Go RIGHT Auto" onclick="{
+
+   clearInterval(myInterval)
+   myInterval = setInterval(function(){
+
+     document.getElementById('myDiv01').style.left =
+parseInt(document.getElementById('myDiv01').style.left) + 10
+
+   } ,200)
+
+}">
+
+
+<input type=button value="Go LEFT Auto" onclick="{
+
+   clearInterval(myInterval)
+   myInterval = setInterval(function(){
+
+     document.getElementById('myDiv01').style.left =
+parseInt(document.getElementById('myDiv01').style.left) - 15
+
+   } ,200)
+
+}">
+
+<input type=button value="Go UP Auto" onclick="{
+
+   clearInterval(myInterval)
+   myInterval = setInterval(function(){
+
+     document.getElementById('myDiv01').style.top =
+parseInt(document.getElementById('myDiv01').style.top) - 20
+
+   } ,200)
+
+}">
+
+<input type=button value="Go DOWN Auto" onclick="{
+
+   clearInterval(myInterval)
+   myInterval = setInterval(function(){
+
+     document.getElementById('myDiv01').style.top =
+parseInt(document.getElementById('myDiv01').style.top) + 10
+
+   } ,200)
+
+}">
+
+
+<input type=button value="STOP" onclick="{
+
+   clearInterval(myInterval)
+   myInterval = setInterval(function(){
+
+     document.getElementById('myDiv01').style.right =
+parseInt(document.getElementById('myDiv01').style.right) + 10
+
+   } ,200)
+
+}">
+
+<body bgcolor= #e6e6ff>
