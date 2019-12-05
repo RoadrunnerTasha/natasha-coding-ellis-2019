@@ -1,0 +1,35 @@
+<h2 align=center>Javascript Classes t2a03-classes-new-Natasha</h2>
+<input type=text id="myNameInput" placeholder="Enter an animal name here"
+value="">
+
+<input id="myButton130" type="button" value="Make and Show the class myAnimal"
+onclick="{
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName +
+'. You are ' + this.myAge + ' years old.<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal('Snickers', 5)
+   myDog.myShow()
+}"><br><br>
+<div id='myDiv130'>...</div><br>
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<input  type="button" value="Use ResponsiveCode" onclick="{
+    responsiveVoice.speak('Natasha you stupid redhead get to work and be productive for once in your life')
+
+}"><br><br>
+
+
+<input  type="button" value="Initialize Speak" onclick="{
+    responsiveVoice.speak('Classes can help you trick people into thinking you are a god level programmer', 'US English Female',
+{pitch: 1, rate: 1, volume : 1})
+}"><br><br>
+
+<body bgcolor=#ccffcc>
