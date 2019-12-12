@@ -44,7 +44,7 @@
 
 <input type=button value="decrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea01').value.toLowerCase().join('')
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'b') {myTemp  = 'a'}
@@ -75,7 +75,7 @@
       if (myString[myLoop] == 'a') {myTemp  = 'z'}
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea03').value = myString.split('')
+   document.getElementById('myArea03').value = myString.join('')
 }"><br><br>
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br>
