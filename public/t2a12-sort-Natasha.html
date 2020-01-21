@@ -23,6 +23,31 @@
   let myTemp = 0
   for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
      myCards[myLoop] = 0
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      
+      if (Number(b[i].innerHTML) > Number(b[i + 1].innerHTML)) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+                                      
   }
 }">
 
